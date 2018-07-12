@@ -5,21 +5,22 @@ class Lander extends Component {
     return (
       <div className="landerPage">
         <div className="landerCard">
-          <div className="landerContainer">
+          <div className="container landerContainer">
             <div className="landerMenu">
-              <h3>travel.</h3>
+              <img src="./images/exploreLogo.jpg"/>
             </div>
             <div className="landerContent">
               <div className="landerText">
-                <h1>Let's discover 
-                  the world.</h1>
-                <p>Travel lets you explore new places. 
-                  Simply choose where you want to go.</p>
-                <a href="#">Let's go !</a>
-              </div>  
+                <h5>Discover the road less traveled.</h5>
+              </div>
+              <div> 
+                <a className="button" href="#">Sign Up</a>
+              </div>
+              <div>
+                <a className="button" href="#">Login</a>
+              </div>
             </div>
           </div>
-          <div className="photo"></div>
         </div>
       </div>
     );
