@@ -6,12 +6,12 @@ class Lander extends Component {
       <div className="landerPage">
         <div className="landerCard">
           <div className="container landerContainer">
-            <div className="loginMenu">
-              <img className="logoLander" src="./images/logoLander.png"/>
+            <div className="signupMenu">
+                <img className="logoLander" src="./images/logoLander.png"/>
             </div>
             <div className="landerContent">
-                <div className="loginDiv"></div>
-                <form className="col s12 loginField">
+                <div className="signupDiv"></div>
+                <form className="col s12 signupField">
                     <div className="row">
                         <div className="input-field col s12"> 
                             <input id="email" type="email" className="validate inputBar"/>
@@ -20,12 +20,24 @@ class Lander extends Component {
                     </div>
                     <div className="row">
                         <div className="input-field col s12"> 
+                            <input id="name" type="text" className="validate inputBar"/>
+                            <label for="name">NAME</label>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="input-field col s12"> 
                             <input id="password" type="password" className="validate inputBar"/>
                             <label for="password">PASSWORD</label>
                         </div>
                     </div>
+                    <div className="row">
+                        <div className="input-field col s12"> 
+                            <input id="password" type="password" className="validate inputBar"/>
+                            <label for="password">CONFIRM PASSWORD</label>
+                        </div>
+                    </div>
                     <div>
-                        <a className="button" href="/login">LOGIN</a>
+                        <a className="button" href="/login">SIGN UP</a>
                     </div>
                 </form>
             </div>

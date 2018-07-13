@@ -1,7 +1,7 @@
 import React from "react";
 
 const Wallpaper = () => (
-  <div id="wallpaper" class="wallpaper" data-image="../public/images/wallpaperMobile.jpg"></div>
+  <div id="wallpaper" class="wallpaper"></div>
 );
 
 export default Wallpaper;

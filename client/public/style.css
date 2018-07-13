@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,800');
+/*Universal CSS*/
 
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   font-family: 'Rajdhani', sans-serif;
   color: #ffffff;
 }
@@ -15,7 +16,6 @@ html {
 }
 
 .landerPage {
-  display: flex;
   position: relative;
   min-height: 85vh;
 }
@@ -28,7 +28,7 @@ html {
   width: 100%;
   background-position: center;
   background-size: cover;
-  opacity: 0.4;
+  opacity: 0.65;
   position: fixed;
 }
 
@@ -60,25 +60,69 @@ html {
   transform: scale(0.98) translateY(-2px);
 }
 
-.inputBar {
-  color: white !important;
+.input-field>label {
+  color: white;
 }
 
-.loginField input[type=text]:focus + label {
-  color: rgb(106, 127, 178) !important;
+input[type=email]:not(.browser-default) {
+  border-bottom: 1px solid white;
 }
 
-.loginField input[type=text]:focus {
-  border-bottom: 1px solid rgb(106, 127, 178) !important;
-  box-shadow: 0 1px 0 0 rgb(106, 127, 178) !important;
+input[type=email]:focus + label {
+  color: rgb(42, 162, 214) !important;
 }
 
-.loginField .prefix.active {
-  color: rgb(106, 127, 178);
+input[type=email]:focus {
+  color: rgb(42, 162, 214) !important;
+}
+
+input[type=email]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid rgb(42, 162, 214);
+  box-shadow: 0 1px 0 0 rgb(42, 162, 214);
+}
+
+input[type=password]:not(.browser-default) {
+  border-bottom: 1px solid white;
+}
+
+input[type=password]:focus + label {
+  color: rgb(42, 162, 214) !important;
+}
+
+input[type=password]:focus {
+  color: rgb(42, 162, 214) !important;
+}
+
+input[type=password]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid rgb(42, 162, 214);
+  box-shadow: 0 1px 0 0 rgb(42, 162, 214);
+}
+
+input[type=text]:not(.browser-default) {
+  border-bottom: 1px solid white;
+}
+
+input[type=text]:focus + label {
+  color: rgb(42, 162, 214) !important;
+}
+
+input[type=text]:focus {
+  color: rgb(42, 162, 214) !important;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid rgb(42, 162, 214);
+  box-shadow: 0 1px 0 0 rgb(42, 162, 214);
 }
 
 
-/* Screen Sizes */
+/*====================================================================================
+======================================================================================
+======================================================================================*/
+
+
+/* Screen Size Specific CSS */
+/*------------------------------------------------------------------------------------*/
 /* smartphones */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .landerMenu h3 {
@@ -86,7 +130,7 @@ html {
   }
 
   .wallpaper {
-    background-image: url("./images/wallpaperMobile.jpg");
+    background-image: url("./images/wallpaper.jpg");
   }
 
   .landerContent {
@@ -94,16 +138,30 @@ html {
   }
 
   .landerMenu {
-    margin-top: 15%;
+    margin-top: 23%;
+    text-align: center;
+  }
+
+  .loginMenu {
+    margin-top: 23%;
     text-align: center;
   }
 
   .landerDiv {
-    margin-top: 80%;
+    margin-top: 65%;
   }
 
   .loginDiv {
-    margin-top: 50%;
+    margin-top: 40%;
+  }
+
+  .signupMenu {
+    margin-top: 15%;
+    text-align: center;
+  }
+
+  .signupDiv {
+    margin-top: 15%;
   }
 
   .button {
@@ -114,5 +172,154 @@ html {
 
   .logoLander {
     width: 80%;
+  }
+}
+
+/*weird screen sizes between phone and tablet*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .landerMenu h3 {
+    text-align: center;
+  }
+
+  .wallpaper {
+    background-image: url("./images/wallpaper.jpg");
+  }
+
+  .landerContent {
+    text-align: center;
+  }
+
+  .landerMenu {
+    margin-top: 23%;
+    text-align: center;
+  }
+
+  .loginMenu {
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .landerDiv {
+    margin-top: 20%;
+  }
+
+  .loginDiv {
+    margin-top: 20%;
+  }
+
+  .signupMenu {
+    margin-top: 3%;
+    text-align: center;
+  }
+
+  .signupDiv {
+    margin-top: 10%;
+  }
+
+  .button {
+    margin-top: 6%;
+    width: 90%;
+    font-size: 100%;
+  }
+
+  .logoLander {
+    width: 80%;
+  }
+}
+
+/* tablets */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+  .wallpaper {
+    background-image: url("./images/wallpaper.jpg");
+  }
+
+  .landerContent {
+    text-align: center;
+  }
+
+  .landerMenu {
+    margin-top: 13%;
+    text-align: center;
+  }
+
+  .loginMenu {
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .landerDiv {
+    margin-top: 20%;
+  }
+
+  .loginDiv {
+    margin-top: 20%;
+  }
+
+  .signupMenu {
+    margin-top: 5%;
+    text-align: left;
+  }
+
+  .signupDiv {
+    margin-top: 5%;
+  }
+
+  .button {
+    margin-top: 6%;
+    width: 50%;
+    font-size: 100%;
+  }
+
+  .logoLander {
+    width: 80%;
+  }
+}
+
+/* laptop and larger */
+@media only screen and (min-width : 1025px) {
+  .wallpaper {
+    background-image: url("./images/wallpaper.jpg");
+  }
+
+  .landerContent {
+    text-align: center;
+  }
+
+  .landerMenu {
+    margin-top: 7%;
+    text-align: center;
+  }
+
+  .loginMenu {
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .landerDiv {
+    margin-top: 30%;
+  }
+
+  .loginDiv {
+    margin-top: 20%;
+  }
+
+  .signupMenu {
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .signupDiv {
+    margin-top: 5%;
+  }
+
+  .button {
+    margin-top: 1%;
+    width: 30%;
+    font-size: 100%;
+  }
+
+  .logoLander {
+    width: 50%;
   }
 }
