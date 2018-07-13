@@ -13,16 +13,20 @@ class Lander extends Component {
                 <div className="loginDiv"></div>
                 <form className="col s12 loginField">
                     <div className="row">
-                        <div className="input-field col s12"> 
+                        <div className="col l3 hide-on-med-and-down"></div>
+                        <div className="input-field col s12 l6"> 
                             <input id="email" type="email" className="validate inputBar"/>
                             <label for="email">EMAIL</label>
                         </div>
+                        <div className="col l3 hide-on-med-and-down"></div>
                     </div>
                     <div className="row">
-                        <div className="input-field col s12"> 
+                        <div className="col l3 hide-on-med-and-down"></div>
+                        <div className="input-field col s12 l6"> 
                             <input id="password" type="password" className="validate inputBar"/>
                             <label for="password">PASSWORD</label>
                         </div>
+                        <div className="col l3 hide-on-med-and-down"></div>
                     </div>
                     <div>
                         <a className="button" href="/login">LOGIN</a>

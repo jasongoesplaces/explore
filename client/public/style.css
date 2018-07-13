@@ -81,6 +81,16 @@ input[type=email]:not(.browser-default):focus:not([readonly]) {
   box-shadow: 0 1px 0 0 rgb(42, 162, 214);
 }
 
+input.valid[type=email]:not(.browser-default) {
+  border-bottom: 1px solid rgb(42, 162, 214);
+  box-shadow: 0 1px 0 0 rgb(42, 162, 214);
+  color: rgb(42, 162, 214);
+}
+
+input.invalid[type=email]:not(.browser-default) {
+  color: #F44336;
+}
+
 input[type=password]:not(.browser-default) {
   border-bottom: 1px solid white;
 }
@@ -98,6 +108,16 @@ input[type=password]:not(.browser-default):focus:not([readonly]) {
   box-shadow: 0 1px 0 0 rgb(42, 162, 214);
 }
 
+input.valid[type=password]:not(.browser-default) {
+  border-bottom: 1px solid rgb(42, 162, 214);
+  box-shadow: 0 1px 0 0 rgb(42, 162, 214);
+  color: rgb(42, 162, 214);
+}
+
+input.invalid[type=password]:not(.browser-default) {
+  color: #F44336;
+}
+
 input[type=text]:not(.browser-default) {
   border-bottom: 1px solid white;
 }
@@ -113,6 +133,12 @@ input[type=text]:focus {
 input[type=text]:not(.browser-default):focus:not([readonly]) {
   border-bottom: 1px solid rgb(42, 162, 214);
   box-shadow: 0 1px 0 0 rgb(42, 162, 214);
+}
+
+input.valid[type=text]:not(.browser-default) {
+  border-bottom: 1px solid rgb(42, 162, 214);
+  box-shadow: 0 1px 0 0 rgb(42, 162, 214);
+  color: rgb(42, 162, 214);
 }
 
 
