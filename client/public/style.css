@@ -14,6 +14,12 @@ html {
   background-image: linear-gradient(to bottom left, #050553bb, rgba(0, 59, 110, 0.945));
 }
 
+.landerPage {
+  display: flex;
+  position: relative;
+  min-height: 85vh;
+}
+
 .wallpaper {
   display: block;
   height: 100%;
@@ -54,6 +60,25 @@ html {
   transform: scale(0.98) translateY(-2px);
 }
 
+.inputBar {
+  color: white !important;
+}
+
+.loginField input[type=text]:focus + label {
+  color: rgb(106, 127, 178) !important;
+}
+
+.loginField input[type=text]:focus {
+  border-bottom: 1px solid rgb(106, 127, 178) !important;
+  box-shadow: 0 1px 0 0 rgb(106, 127, 178) !important;
+}
+
+.loginField .prefix.active {
+  color: rgb(106, 127, 178);
+}
+
+
+/* Screen Sizes */
 /* smartphones */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .landerMenu h3 {
@@ -69,14 +94,25 @@ html {
   }
 
   .landerMenu {
-    margin-top: 25%;
+    margin-top: 15%;
+    text-align: center;
   }
 
-  .landerText {
-    margin-top: 45%;
+  .landerDiv {
+    margin-top: 80%;
+  }
+
+  .loginDiv {
+    margin-top: 50%;
   }
 
   .button {
-    margin-top: 15%;
+    margin-top: 6%;
+    width: 90%;
+    font-size: 100%;
+  }
+
+  .logoLander {
+    width: 80%;
   }
 }

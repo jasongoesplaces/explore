@@ -7,17 +7,15 @@ class Lander extends Component {
         <div className="landerCard">
           <div className="container landerContainer">
             <div className="landerMenu">
-              <img src="./images/exploreLogo.jpg"/>
+              <img className="logoLander" src="./images/logoLander.png"/>
             </div>
             <div className="landerContent">
-              <div className="landerText">
-                <h5>Discover the road less traveled.</h5>
-              </div>
+            <div className="landerDiv"></div>
               <div> 
-                <a className="button" href="#">Sign Up</a>
+                <a className="button" href="#">SIGN UP</a>
               </div>
               <div>
-                <a className="button" href="#">Login</a>
+                <a className="button" href="/login">LOGIN</a>
               </div>
             </div>
           </div>
