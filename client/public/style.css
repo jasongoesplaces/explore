@@ -20,6 +20,50 @@ html {
   min-height: 85vh;
 }
 
+.dashboard {
+  position: relative;
+  min-height: 85vh;
+}
+
+.tabs {
+  background-color: #ffffff00;
+}
+
+.tabs .tab a {
+  color: #ffffff
+}
+
+.tabs .tab a:hover {
+  color: #1F7AA2
+}
+
+.tabs .tab a.active {
+  color: #ffffff;
+}
+
+.tabs .indicator {
+  background-color: #ffffff
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+  background-color: rgba(31, 123, 162, 0.075)
+}
+
+.card,
+.card-content,
+.card-action {
+  background-color: rgba(244, 244, 248, 0.096)
+}
+
+.card-action {
+  text-align: center
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: #ffffff;
+  text-align: center
+}
+
 .wallpaper {
   display: block;
   height: 100%;
@@ -58,6 +102,11 @@ html {
 .button:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
   transform: scale(0.98) translateY(-2px);
+}
+
+nav {
+  background-color: #ffffff00;
+  box-shadow: none;
 }
 
 .input-field>label {
@@ -306,6 +355,18 @@ input.valid[type=text]:not(.browser-default) {
 @media only screen and (min-width : 1025px) {
   .wallpaper {
     background-image: url("./images/wallpaper.jpg");
+  }
+
+  .card {
+    margin-top: 5%;
+  }
+
+  .cardImg {
+    height: 350px;
+  }
+
+  .brand-logo {
+    margin-left: 5%
   }
 
   .landerContent {

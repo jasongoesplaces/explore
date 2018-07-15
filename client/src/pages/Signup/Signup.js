@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Lander extends Component {
+class Signup extends Component {
   render() {
     return (
       <div className="landerPage">
@@ -36,14 +36,6 @@ class Lander extends Component {
                         </div>
                         <div className="col l3 hide-on-med-and-down"></div>
                     </div>
-                    <div className="row">
-                        <div className="col l3 hide-on-med-and-down"></div>
-                        <div className="input-field col s12 l6"> 
-                            <input id="password" type="password" className="validate inputBar"/>
-                            <label for="password">CONFIRM PASSWORD</label>
-                        </div>
-                        <div className="col l3 hide-on-med-and-down"></div>
-                    </div>
                     <div>
                         <a className="button" href="/login">SIGN UP</a>
                     </div>
@@ -56,4 +48,4 @@ class Lander extends Component {
   }
 }
 
-export default Lander;
+export default Signup;
