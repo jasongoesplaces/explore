@@ -4,7 +4,7 @@ import NavBar from "../../components/Nav"
 class Guides extends Component {
   render() {
     return (
-      <div className="dashboard">
+      <div className="guides">
         <NavBar/>
         <div className="row">
             <div className="col s12">
@@ -27,8 +27,12 @@ class Guides extends Component {
                             </div>
                             <div className="card-content">
                                 <span className="card-title">Orlando, FL, USA</span>
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                                <p>Located in central Florida in the south-eastern United 
+                                    States, Orlando is well known as the theme park capital 
+                                    of the world. Look beyond the theme parks, though, and
+                                    you will discover The City Beautiful has much more to 
+                                    offer.
+                                </p>
                             </div>
                             <div className="card-action">
                                 <a className="button" href="/guides">Explore Orlando</a>

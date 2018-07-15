@@ -20,9 +20,19 @@ html {
   min-height: 85vh;
 }
 
-.dashboard {
+.guides {
   position: relative;
   min-height: 85vh;
+}
+
+.about {
+  position: relative;
+  min-height: 85vh;
+}
+
+.aboutContent {
+  text-align: center;
+  background-color: rgba(244, 244, 248, 0.096)
 }
 
 .tabs {
@@ -57,6 +67,14 @@ html {
 
 .card-action {
   text-align: center
+}
+
+.card-content p {
+  text-align: center;
+}
+
+.card-content {
+  height: 150px;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
