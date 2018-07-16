@@ -20,7 +20,7 @@ class Guides extends Component {
             </div>
             <div id="NorthAmerica" className="col s12">
                 <div className="row">
-                    <div className="col s12 m6">
+                    <div className="col s12 m6 guideCard">
                         <div className="card z-depth-0">
                             <div className="card-image">
                                 <img className="cardImg" src="images/orlando.jpg"/>
@@ -39,7 +39,7 @@ class Guides extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col s12 m6">
+                    <div className="col s12 m6 guideCard">
                         <div className="card z-depth-0">
                             <div className="card-image">
                                 <img className="cardImg" src="images/tampa.jpg"/>
@@ -56,7 +56,7 @@ class Guides extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col s12 m6">
+                    <div className="col s12 m6 guideCard">
                         <div className="card z-depth-0">
                             <div className="card-image">
                                 <img className="cardImg" src="images/oahu.jpg"/>
@@ -67,11 +67,11 @@ class Guides extends Component {
                                 I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div className="card-action">
-                                <a className="button" href="/guides">Explore Orlando</a>
+                                <a className="button" href="/guides">Explore Oahu</a>
                             </div>
                         </div>
                     </div>
-                    <div className="col s12 m6">
+                    <div className="col s12 m6 guideCard">
                         <div className="card z-depth-0">
                             <div className="card-image">
                                 <img className="cardImg" src="images/vermont.jpg"/>
@@ -82,7 +82,7 @@ class Guides extends Component {
                                 I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div className="card-action">
-                                <a className="button" href="/guides">Explore Tampa</a>
+                                <a className="button" href="/guides">Explore Vermont</a>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ class Guides extends Component {
             </div>
             <div id="Europe" className="col s12">
                 <div className="row">
-                    <div className="col s12 m6">
+                    <div className="col s12 m6 guideCard">
                         <div className="card z-depth-0">
                             <div className="card-image">
                                 <img className="cardImg" src="images/bergen.jpg"/>
@@ -105,7 +105,7 @@ class Guides extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col s12 m6">
+                    <div className="col s12 m6 guideCard">
                         <div className="card z-depth-0">
                             <div className="card-image">
                                 <img className="cardImg" src="images/goldenCircle.jpg"/>
@@ -123,13 +123,106 @@ class Guides extends Component {
                 </div>
             </div>
             <div id="Asia" className="col s12">
-                <h1>Coming Soon</h1>
+                <div className="row">
+                    <div className="col s12 m6 guideCard">
+                        <div className="card z-depth-0">
+                            <div className="card-image">
+                                <img className="cardImg" src="images/bangkok.jpg"/>
+                            </div>
+                            <div className="card-content">
+                                <span className="card-title">Bangkok, Thailand</span>
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div className="card-action">
+                                <h5>Coming Soon</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col s12 m6 guideCard">
+                        <div className="card z-depth-0">
+                            <div className="card-image">
+                                <img className="cardImg" src="images/tokyo.jpg"/>
+                            </div>
+                            <div className="card-content">
+                                <span className="card-title">Tokyo, Japan</span>
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div className="card-action">
+                                <h5>Coming Soon</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="Africa" className="col s12">
-                <h1>Coming Soon</h1>
+                <div className="row">
+                    <div className="col s12 m6 guideCard">
+                        <div className="card z-depth-0">
+                            <div className="card-image">
+                                <img className="cardImg" src="images/capeTown.jpg"/>
+                            </div>
+                            <div className="card-content">
+                                <span className="card-title">Cape Town, South Africa</span>
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div className="card-action">
+                                <h5>Coming Soon</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col s12 m6 guideCard">
+                        <div className="card z-depth-0">
+                            <div className="card-image">
+                                <img className="cardImg" src="images/namibia.jpg"/>
+                            </div>
+                            <div className="card-content">
+                                <span className="card-title">Atlantic Coast, Namibia</span>
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div className="card-action">
+                                <h5>Coming Soon</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="SouthAmerica" className="col s12">
-                <h1>Coming Soon</h1>
+                <div className="row">
+                    <div className="col s12 m6 guideCard">
+                        <div className="card z-depth-0">
+                            <div className="card-image">
+                                <img className="cardImg" src="images/lima.jpg"/>
+                            </div>
+                            <div className="card-content">
+                                <span className="card-title">Lima, Peru</span>
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div className="card-action">
+                                <h5>Coming Soon</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col s12 m6 guideCard">
+                        <div className="card z-depth-0">
+                            <div className="card-image">
+                                <img className="cardImg" src="images/santiago.jpg"/>
+                            </div>
+                            <div className="card-content">
+                                <span className="card-title">Santiago, Chile</span>
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div className="card-action">
+                                <h5>Coming Soon</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>    
     </div>

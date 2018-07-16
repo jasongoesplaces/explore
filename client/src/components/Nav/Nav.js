@@ -4,7 +4,7 @@ const Nav = () => (
   <div>
     <nav>
       <div className="nav-wrapper navBar">
-        <a href="#" className="brand-logo">explore</a>
+        <a href="/about" className="brand-logo">explore</a>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li><a href="/about">About Us</a></li>
           <li><a href="/guides">Guides</a></li>
