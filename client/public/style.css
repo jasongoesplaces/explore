@@ -111,6 +111,60 @@ html {
   text-align: center
 }
 
+.eventPageTitle {
+  text-align: center;
+  margin-top: 2%
+}
+
+.eventButton {
+  background-image: linear-gradient(to bottom left, #1F1FA2, #1F7AA2);
+  color: #ffffff;
+  font-family: 'Rajdhani', sans-serif;
+  font-stretch: expanded;
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 1;
+  padding: 1.25em 2em;
+  text-shadow: none;
+  transition-property: box-shadow, transform;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+#eventsResults {
+  overflow-y: scroll
+}
+
+.searchField {
+  text-align: center;
+  background-color: rgba(53, 53, 53, 0.247);
+  padding-top: 2%;
+}
+
+.searchLabel {
+  color: #ffffff
+}
+
+.searchBar {
+  color: #ffffff !important
+}
+
+.eventTitle {
+  text-align: center
+}
+
+button {
+  border-style: none;
+  cursor: pointer;
+}
+
+.input-field .prefix.active {
+  color: rgb(48, 184, 241)
+}
+
 .wallpaper {
   display: block;
   height: 100%;
@@ -165,22 +219,22 @@ input[type=email]:not(.browser-default) {
 }
 
 input[type=email]:focus + label {
-  color: rgb(42, 162, 214) !important;
+  color: rgb(48, 184, 241) !important;
 }
 
 input[type=email]:focus {
-  color: rgb(42, 162, 214) !important;
+  color: rgb(48, 184, 241) !important;
 }
 
 input[type=email]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid rgb(42, 162, 214);
-  box-shadow: 0 1px 0 0 rgb(42, 162, 214);
+  border-bottom: 1px solid rgb(48, 184, 241);
+  box-shadow: 0 1px 0 0 rgb(48, 184, 241);
 }
 
 input.valid[type=email]:not(.browser-default) {
-  border-bottom: 1px solid rgb(42, 162, 214);
-  box-shadow: 0 1px 0 0 rgb(42, 162, 214);
-  color: rgb(42, 162, 214);
+  border-bottom: 1px solid rgb(48, 184, 241);
+  box-shadow: 0 1px 0 0 rgb(48, 184, 241);
+  color: rgb(48, 184, 241);
 }
 
 input.invalid[type=email]:not(.browser-default) {
@@ -192,22 +246,22 @@ input[type=password]:not(.browser-default) {
 }
 
 input[type=password]:focus + label {
-  color: rgb(42, 162, 214) !important;
+  color: rgb(48, 184, 241) !important;
 }
 
 input[type=password]:focus {
-  color: rgb(42, 162, 214) !important;
+  color: rgb(48, 184, 241) !important;
 }
 
 input[type=password]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid rgb(42, 162, 214);
-  box-shadow: 0 1px 0 0 rgb(42, 162, 214);
+  border-bottom: 1px solid rgb(48, 184, 241);
+  box-shadow: 0 1px 0 0 rgb(48, 184, 241);
 }
 
 input.valid[type=password]:not(.browser-default) {
-  border-bottom: 1px solid rgb(42, 162, 214);
-  box-shadow: 0 1px 0 0 rgb(42, 162, 214);
-  color: rgb(42, 162, 214);
+  border-bottom: 1px solid rgb(48, 184, 241);
+  box-shadow: 0 1px 0 0 rgb(48, 184, 241);
+  color: rgb(48, 184, 241);
 }
 
 input.invalid[type=password]:not(.browser-default) {
@@ -219,22 +273,22 @@ input[type=text]:not(.browser-default) {
 }
 
 input[type=text]:focus + label {
-  color: rgb(42, 162, 214) !important;
+  color: rgb(48, 184, 241) !important;
 }
 
 input[type=text]:focus {
-  color: rgb(42, 162, 214) !important;
+  color: rgb(48, 184, 241) !important;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid rgb(42, 162, 214);
-  box-shadow: 0 1px 0 0 rgb(42, 162, 214);
+  border-bottom: 1px solid rgb(48, 184, 241);
+  box-shadow: 0 1px 0 0 rgb(48, 184, 241);
 }
 
 input.valid[type=text]:not(.browser-default) {
-  border-bottom: 1px solid rgb(42, 162, 214);
-  box-shadow: 0 1px 0 0 rgb(42, 162, 214);
-  color: rgb(42, 162, 214);
+  border-bottom: 1px solid rgb(48, 184, 241);
+  box-shadow: 0 1px 0 0 rgb(48, 184, 241);
+  color: rgb(48, 184, 241);
 }
 
 
@@ -410,6 +464,10 @@ input.valid[type=text]:not(.browser-default) {
 
   .cardImg {
     height: 350px;
+  }
+
+  .cardImgEvent {
+    height: 250px;
   }
 
   .aboutContent {

@@ -8,21 +8,21 @@ const Nav = () => (
         <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li><a href="/about">About Us</a></li>
           <li><a href="/guides">Guides</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Forum</a></li>
-          <li><a href="#">Log Out</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/forum">Forum</a></li>
+          <li><a href="/logout">Log Out</a></li>
         </ul>
         <ul id="nav-mobile" className="left hide-on-large-only">
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons right">menu</i></a></li>
+          <li><a className="dropdown-trigger" href="#!" data-target="dropdown1"><i className="material-icons right">menu</i></a></li>
         </ul>
       </div>
     </nav>
-    <ul id="dropdown1" class="dropdown-content">
+    <ul id="dropdown1" className="dropdown-content">
       <li><a href="/about">About Us</a></li>
       <li><a href="/guides">Guides</a></li>
-      <li><a href="#">Events</a></li>
-      <li><a href="#">Forum</a></li>
-      <li><a href="#">Log Out</a></li>
+      <li><a href="/events">Events</a></li>
+      <li><a href="/forum">Forum</a></li>
+      <li><a href="/logout">Log Out</a></li>
     </ul>
   </div>
 );

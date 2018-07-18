@@ -16,7 +16,7 @@ class Signup extends Component {
                         <div className="col l3 hide-on-med-and-down"></div>
                         <div className="input-field col s12 l6"> 
                             <input id="email" type="email" className="validate inputBar"/>
-                            <label for="email">EMAIL</label>
+                            <label htmlFor="email">EMAIL</label>
                         </div>
                         <div className="col l3 hide-on-med-and-down"></div>
                     </div>
@@ -24,7 +24,7 @@ class Signup extends Component {
                         <div className="col l3 hide-on-med-and-down"></div>
                         <div className="input-field col s12 l6"> 
                             <input id="name" type="text" className="validate inputBar"/>
-                            <label for="name">NAME</label>
+                            <label htmlFor="name">NAME</label>
                         </div>
                         <div className="col l3 hide-on-med-and-down"></div>
                     </div>
@@ -32,7 +32,7 @@ class Signup extends Component {
                         <div className="col l3 hide-on-med-and-down"></div>
                         <div className="input-field col s12 l6"> 
                             <input id="password" type="password" className="validate inputBar"/>
-                            <label for="password">PASSWORD</label>
+                            <label htmlFor="password">PASSWORD</label>
                         </div>
                         <div className="col l3 hide-on-med-and-down"></div>
                     </div>

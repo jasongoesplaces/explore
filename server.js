@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+require("dotenv").config();
 
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -17,6 +18,7 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/explore");
+// const seeds = require("./scripts/guideSeeds")
 
 // Start the API server
 app.listen(PORT, function() {
