@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import NavBar from "../../components/LanderNav"
 
 class Lander extends Component {
   render() {
     return (
       <div className="landerPage">
+      <NavBar />
         <div className="landerCard">
           <div className="container landerContainer">
             <div className="landerMenu">
@@ -12,10 +14,7 @@ class Lander extends Component {
             <div className="landerContent">
             <div className="landerDiv"></div>
               <div> 
-                <a className="button" href="/signup">SIGN UP</a>
-              </div>
-              <div>
-                <a className="button" href="/login">LOGIN</a>
+                <a className="button landerButton" href="/about">GET STARTED</a>
               </div>
             </div>
           </div>

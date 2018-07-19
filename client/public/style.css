@@ -25,11 +25,34 @@ html, body {
   overflow-x: hidden;
   font-family: 'Rajdhani', sans-serif;
   color: #ffffff;
+  font-size: 14pt
 }
 
 html {
   background-color: #023d6ef3;
   background-image: linear-gradient(to bottom left, #050553bb, rgba(0, 59, 110, 0.945));
+}
+
+.landerNav {
+  font-size: 130%;
+}
+
+.landerNav:hover {
+  color: rgb(48, 184, 241);
+  background-color: #ffffff00
+}
+
+.landerLogin {
+  color: #ffffff; 
+  line-height: 15%
+}
+
+.landerLogin:hover {
+  color: rgb(48, 184, 241);
+}
+
+.landerButton {
+  margin-bottom: 4%
 }
 
 .landerPage {
@@ -117,21 +140,31 @@ html {
 }
 
 .eventButton {
-  background-image: linear-gradient(to bottom left, #1F1FA2, #1F7AA2);
+  background-color: rgba(34, 34, 34, 0.527);
+  background-image: none;
+  border-image: linear-gradient(to right, #ffffff, #ffffff);
+  border-image-slice: 1;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
   color: #ffffff;
   font-family: 'Rajdhani', sans-serif;
-  font-stretch: expanded;
+  font-weight: bold;
   display: inline-block;
   font-size: 0.875rem;
   line-height: 1;
-  padding: 1.25em 2em;
+  padding: 1em 1.5em;
   text-shadow: none;
-  transition-property: box-shadow, transform;
-  user-select: none;
-  vertical-align: top;
-  white-space: nowrap;
-  will-change: box-shadow, transform;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  font-size: 10pt
+}
+
+.eventButton:hover {
+  border-image: linear-gradient(to right, rgb(48, 184, 241), rgb(48, 184, 241));
+  border-image-slice: 1;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(48, 184, 241);
 }
 
 #eventsResults {
@@ -163,6 +196,16 @@ button {
   cursor: pointer;
 }
 
+button:focus {
+  background-color: rgba(34, 34, 34, 0.527);
+  border-image: linear-gradient(to right, rgb(48, 184, 241), rgb(48, 184, 241));
+  border-image-slice: 1;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(48, 184, 241);
+}
+
 .input-field .prefix.active {
   color: rgb(48, 184, 241)
 }
@@ -180,31 +223,30 @@ button {
 }
 
 .button {
-  background-image: linear-gradient(to bottom left, #1F1FA2, #1F7AA2);
+  background-color: rgba(34, 34, 34, 0.774);
+  background-image: none;
+  border-image: linear-gradient(to right, #ffffff, #ffffff);
+  border-image-slice: 1;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
   color: #ffffff;
   font-family: 'Rajdhani', sans-serif;
-  font-stretch: expanded;
+  font-weight: bold;
   display: inline-block;
   font-size: 0.875rem;
-  line-height: 1;
-  padding: 1.25em 2em;
+  line-height: 0.75;
+  padding: 1em 1em;
   text-shadow: none;
-  transition-property: box-shadow, transform;
-  user-select: none;
-  vertical-align: top;
-  white-space: nowrap;
-  will-change: box-shadow, transform;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .button:hover {
-  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
-  transform: scale(1.02) translateY(-4px);
-}
-
-.button:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-  transform: scale(0.98) translateY(-2px);
+  border-image: linear-gradient(to right, rgb(48, 184, 241), rgb(48, 184, 241));
+  border-image-slice: 1;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(48, 184, 241);
 }
 
 nav {
@@ -311,6 +353,10 @@ input.valid[type=text]:not(.browser-default) {
     background-image: url("./images/wallpaper.jpg");
   }
 
+  .button {
+    width: 43% !important;
+  }
+
   .landerContent {
     text-align: center;
   }
@@ -363,6 +409,10 @@ input.valid[type=text]:not(.browser-default) {
     background-image: url("./images/wallpaper.jpg");
   }
 
+  .button {
+    width: 33% !important;
+  }
+
   .landerContent {
     text-align: center;
   }
@@ -410,6 +460,10 @@ input.valid[type=text]:not(.browser-default) {
 
   .wallpaper {
     background-image: url("./images/wallpaper.jpg");
+  }
+
+  .button {
+    width: 27% !important;
   }
 
   .landerContent {
@@ -460,6 +514,10 @@ input.valid[type=text]:not(.browser-default) {
     background-image: url("./images/wallpaper.jpg");
   }
 
+  .button {
+    width: 20% !important;
+  }
+
   .card {
     margin-top: 5%;
   }
@@ -485,7 +543,7 @@ input.valid[type=text]:not(.browser-default) {
   }
 
   .landerMenu {
-    margin-top: 7%;
+    margin-top: 6%;
     text-align: center;
   }
 
@@ -495,7 +553,7 @@ input.valid[type=text]:not(.browser-default) {
   }
 
   .landerDiv {
-    margin-top: 30%;
+    margin-top: 20%;
   }
 
   .loginDiv {
