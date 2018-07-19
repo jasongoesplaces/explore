@@ -135,8 +135,10 @@ html {
 }
 
 #eventsResults {
-  overflow-y: scroll
+  overflow-y: scroll;
+  overflow-x: scroll
 }
+
 
 .searchField {
   text-align: center;
