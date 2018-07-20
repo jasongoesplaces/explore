@@ -29,7 +29,7 @@ class Login extends Component {
                         <div className="col l3 hide-on-med-and-down"></div>
                     </div>
                     <div>
-                        <a className="button" href="/about">LOGIN</a>
+                        <a className="button" href="/guides">LOGIN</a>
                     </div>
                 </form>
             </div>

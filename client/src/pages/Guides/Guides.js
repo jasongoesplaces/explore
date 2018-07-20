@@ -35,7 +35,7 @@ class Guides extends Component {
                                 </p>
                             </div>
                             <div className="card-action">
-                                <a className="button" href="/guides">Explore Orlando</a>
+                                <a className="guideButton" href="/guides">Explore Orlando</a>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ class Guides extends Component {
                                 I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div className="card-action">
-                                <a className="button" href="/guides">Explore Tampa</a>
+                                <a className="guideButton" href="/guides">Explore Tampa</a>
                             </div>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ class Guides extends Component {
                                 I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div className="card-action">
-                                <a className="button" href="/guides">Explore Oahu</a>
+                                <a className="guideButton" href="/guides">Explore Oahu</a>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ class Guides extends Component {
                                 I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div className="card-action">
-                                <a className="button" href="/guides">Explore Vermont</a>
+                                <a className="guideButton" href="/guides">Explore Vermont</a>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ class Guides extends Component {
                                 I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div className="card-action">
-                                <a className="button" href="/guides">Explore Bergen</a>
+                                <a className="guideButton" href="/guides">Explore Bergen</a>
                             </div>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ class Guides extends Component {
                                 I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div className="card-action">
-                                <a className="button" href="/guides">Explore Iceland</a>
+                                <a className="guideButton" href="/guides">Explore Iceland</a>
                             </div>
                         </div>
                     </div>

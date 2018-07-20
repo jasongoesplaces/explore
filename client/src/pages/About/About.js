@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavBar from "../../components/Nav"
+import NavBar from "../../components/AboutNav"
 
 class About extends Component {
   render() {
@@ -9,30 +9,70 @@ class About extends Component {
         <div className="row">
             <div className="col m2 hide-on-small-only"></div>
             <div className="col s12 m8 aboutContent">
-                <h1>About The explore Project</h1>
-                <p>The goal of The explore Project is to help users find a new kind of travel experience.
-                    Too frequently we see friends and family go on vacations and spend their hard earned 
-                    money just to end up in locations with huge crowds of people trying to see the same 
-                    small monument. They wait in endless lines just to get a picture of the same tourist 
-                    attraction that thousands of other people have nearly identical pictures of. When it's 
-                    finally time to return home, they realize they haven't seen anything unique or truely
-                    experienced the local culture. It just feels like they didn't get the most out of the 
-                    trip that they could have, and even worse, they already spend their entire vacation budget.
-                </p>
+                <div className="container">
+                    <div className="section">
+                        <div className="row">
+                            <div className="col s12 offset-m1 m10 center">
+                                <h4 className="center">explore the world, travel&nbsp;like&nbsp;a&nbsp;local.</h4>
+                                <img className="aboutImg" src="images/bergen2.jpg"/>
+                                <p className="left-align light center">
+                                    explore helps users find a new kind of travel experience. Too often when we
+                                    travel, we focus all our time and money seeing the same gaudy tourist traps
+                                    that are flooded with huge crowds. By the end of the trip, we realize we've
+                                    only seen the same old spots and taken the same photos that millions of other
+                                    tourists have taken and missed out on the local culture. explore allows its
+                                    users to find unique stops to add to their trip to get an athentic taste of 
+                                    the local culture.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col s12 m4">
+                            <div className="icon-block">
+                                <h2 className="center aboutIcons">
+                                    <i className="material-icons">computer</i>
+                                </h2>
+                                <h5 className="center">City Guides</h5>
+                                <p class="light">Our city guides contain some of the 
+                                    best local places from each featured destination that will 
+                                    help you make the most of your trip.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col s12 m4">
+                            <div className="icon-block">
+                                <h2 className="center aboutIcons">
+                                    <i className="material-icons">event</i>
+                                </h2>
+                                <h5 className="center">Events</h5>
+                                <p className="light">One of the best ways to connect with
+                                    the local culture is through events. Our events page allows you
+                                    to search for upcoming events in a city and buy tickets.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col s12 m4">
+                            <div className="icon-block">
+                                <h2 className="center aboutIcons">
+                                    <i className="material-icons">forum</i>
+                                </h2>
+                                <h5 className="center">Forum</h5>
 
-                <p>The explore Project wants to help alleviate this problem by providing a new type of city 
-                    guide. You wont find the typical tourist traps, but rather activities and restaurants that 
-                    are off the beaten path. Written by locals and frequent visitors, each guide will help you 
-                    find a more authentic local experience to make your vacation even more memorable. Additionally, 
-                    the events page will help you find upcoming events in the place you want to visit and the forum 
-                    will allow you to ask questions relative to each city guide location as well as offer answers to 
-                    questions based on your own experiences.
-                </p>
-                <h5>explore the world, travel like a local.</h5>
-            </div>
-            <div className="col m2 hide-on-small-only"></div>
-        </div>    
-    </div>
+                                <p className="light">The forum is your chance to get personal advice
+                                    from a local as well as join in to help out others that have 
+                                    questions about your hometown.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div> 
+                        <a className="button guideButton aboutButton" href="/signup">SIGN UP</a>
+                    </div>
+                    <div className="col m2 hide-on-small-only"></div>
+                </div>
+            </div> 
+        </div>   
+      </div>
     );
   }
 }
