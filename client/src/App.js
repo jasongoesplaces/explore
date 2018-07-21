@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Dashboard from "./pages/Dashboard";
 import Guides from "./pages/Guides";
 import Events from "./pages/Events"
+import GuideDetail from "./pages/GuideDetail";
 
 const App = () => (
   <Router>
@@ -18,6 +19,7 @@ const App = () => (
         <Route exact path="/about" component={About} />
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/guides" component={Guides} />
+        <Route exact path="/guides/:location" component={GuideDetail} />
         <Route exact path="/events" component={Events} />
       </Switch>
     </div>
