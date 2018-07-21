@@ -263,6 +263,10 @@ html {
   margin-top: 2%
 }
 
+.eventSearchIcon {
+  margin-top: 2%
+}
+
 .eventButton {
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -284,6 +288,7 @@ html {
   padding: 1em 1.5em;
   text-shadow: none;
   font-size: 10pt;
+  margin-top: 11%;
 }
 
 .eventButton:hover {
@@ -307,8 +312,12 @@ html {
 
 .searchField {
   text-align: center;
+  padding-top: 5%;
+  margin-top: 3%;
+}
+
+.searchFieldBG {
   background-color: rgba(53, 53, 53, 0.247);
-  padding-top: 2%;
 }
 
 .searchLabel {
