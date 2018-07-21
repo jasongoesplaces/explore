@@ -18,7 +18,7 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/explore");
-// const seeds = require("./scripts/guideSeeds")
+// const seeds = require("./scripts/guideSeeds") 
 
 // Start the API server
 app.listen(PORT, function() {
