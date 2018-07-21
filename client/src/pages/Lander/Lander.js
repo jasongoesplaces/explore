@@ -14,7 +14,7 @@ class Lander extends Component {
             <div className="landerContent">
             <div className="landerDiv"></div>
               <div> 
-                <a className="landerButton" href="/about">GET STARTED</a>
+                <a className="button landerButton" href="/about">GET STARTED</a>
               </div>
             </div>
           </div>

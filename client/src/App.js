@@ -4,6 +4,7 @@ import Lander from "./pages/Lander";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import About from "./pages/About";
+import Dashboard from "./pages/Dashboard";
 import Guides from "./pages/Guides";
 import Events from "./pages/Events"
 
@@ -15,6 +16,7 @@ const App = () => (
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/guides" component={Guides} />
         <Route exact path="/events" component={Events} />
       </Switch>
