@@ -39,7 +39,7 @@ app.post('/signup', (req, res) => {
   console.log(name, email, password)
   const saltRounds = 10;
   bcrypt.hash(password, saltRounds, (err, hash) => {
-    db.User.insert({
+    db.User.create({
       "name": name,
       "email": email,
       "password": hash

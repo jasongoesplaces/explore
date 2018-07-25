@@ -3,18 +3,18 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
     name: {
-        type: DataTypes.STRING,
+        type: String,
         required: true
     },
     email: {
-        type: DataTypes.STRING,
+        type: String,
         required: true
     },
     password: {
-        type: DataTypes.STRING,
+        type: String,
         required: true
     }
 })
 const User = mongoose.model("User", userSchema);
 
-export default User;
+module.exports =  User;

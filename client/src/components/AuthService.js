@@ -3,6 +3,7 @@ import decode from 'jwt-decode';
 export default class AuthService {
 
     login = (email, password) => {
+        console.log("In login")
         return this.fetch('/login', {
             method: 'POST',
             body: JSON.stringify({
@@ -10,6 +11,7 @@ export default class AuthService {
                 password
             })
         }).then(res => {
+            console.log("setting token because we're awesome")
             this.setToken(res.token)
             return Promise.resolve(res);
         })

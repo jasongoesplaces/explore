@@ -1,3 +1,4 @@
 module.exports = {
-  Guide: require("./guide")
+  Guide: require("./guide"),
+  User: require("./user")
 };
