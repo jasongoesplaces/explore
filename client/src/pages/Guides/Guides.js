@@ -35,7 +35,7 @@ class Guides extends Component {
                                 </p>
                             </div>
                             <div className="card-action">
-                                <a className="guideButton" href="/guides">Explore Orlando</a>
+                                <a className="guideButton" href="/guides/orlando">Explore Orlando</a>
                             </div>
                         </div>
                     </div>
@@ -46,11 +46,14 @@ class Guides extends Component {
                             </div>
                             <div className="card-content">
                                 <span className="card-title">Tampa, FL, USA</span>
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                                <p>Tampa is a city on Tampa Bay, along Florida’s Gulf Coast. It is
+                                    a major business center, but also rich in culture. Nicknamed 
+                                    Cigar City, it is home to the oldest cigar manufacturer in the 
+                                    USA. 
+                                </p>
                             </div>
                             <div className="card-action">
-                                <a className="guideButton" href="/guides">Explore Tampa</a>
+                                <a className="guideButton" href="/guides/tampa">Explore Tampa</a>
                             </div>
                         </div>
                     </div>
@@ -67,7 +70,7 @@ class Guides extends Component {
                                 I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div className="card-action">
-                                <a className="guideButton" href="/guides">Explore Oahu</a>
+                                <a className="guideButton" href="/guides/oahu">Explore Oahu</a>
                             </div>
                         </div>
                     </div>
@@ -82,7 +85,7 @@ class Guides extends Component {
                                 I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div className="card-action">
-                                <a className="guideButton" href="/guides">Explore Vermont</a>
+                                <a className="guideButton" href="/guides/vermont">Explore Vermont</a>
                             </div>
                         </div>
                     </div>
@@ -101,7 +104,7 @@ class Guides extends Component {
                                 I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div className="card-action">
-                                <a className="guideButton" href="/guides">Explore Bergen</a>
+                                <a className="guideButton" href="/guides/bergen">Explore Bergen</a>
                             </div>
                         </div>
                     </div>
@@ -111,12 +114,12 @@ class Guides extends Component {
                                 <img className="cardImg" src="images/goldenCircle.jpg"/>
                             </div>
                             <div className="card-content">
-                                <span className="card-title">Golden Circle, Iceland</span>
+                                <span className="card-title">Iceland</span>
                                 <p>I am a very simple card. I am good at containing small bits of information.
                                 I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div className="card-action">
-                                <a className="guideButton" href="/guides">Explore Iceland</a>
+                                <a className="guideButton" href="/guides/iceland">Explore Iceland</a>
                             </div>
                         </div>
                     </div>

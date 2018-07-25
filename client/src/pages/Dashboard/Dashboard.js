@@ -6,43 +6,38 @@ class Dashboard extends Component {
     return (
         <div className="guides">
             <NavBar/>
-            <div class="container full-screen">
+            <div class="container dashboard">
                 <section className="row">
-                    <h1 className="title">Info Cards</h1>
+                    <h1 className="title">Welcome to explore</h1>
                     <hr/>
-                    <div className="col-xs-8 col-xs-offset-2">
-                        <p className="lead text-center">A set of cards made to display an extract of information. When you hover, it displays a title, paragraph and button with transition effects.</p>
-                        <hr/>
-                    </div>
                 </section>
                 <div className="row">
-                    <article className="col-xs-4">
-                        <div className="cards"><span className="glyphicon glyphicon-flash icon"></span>
-                            <hr className="divider" />
-                            <h2 className="title">First</h2>
-                            <div className="info">
-                                <hr className="divider" />
-                                <p className="lead">Are you ready see the next page and be amazed of what you can find?</p><a className="btn btn-lg center-block">Go get it!</a></div>
+                    <div className="col s12 m6">
+                        <div className="card">
+                            <div className="card-content">
+                                <span class="card-title">City Guides</span>
+                                <p>
+                                    Find the best activities in your destination with our city guides.
+                                </p>
+                            </div>
+                            <div className="card-action">
+                                <a className="guideButton" href="/guides">Get Started</a>
+                            </div>
                         </div>
-                    </article>
-                    <article className="col-xs-4">
-                        <div className="cards"><span className="glyphicon glyphicon-bookmark icon"></span>
-                            <hr className="divider" />
-                            <h2 className="title">Second</h2>
-                            <div className="info">
-                                <hr className="divider" />
-                                <p className="lead">Are you ready to see the next page and be amazed of what you can find?</p><a className="btn btn-lg center-block">Go get it!</a></div>
+                    </div>
+                    <div className="col s12 m6">
+                        <div className="card">
+                            <div className="card-content">
+                                <span class="card-title">Events</span>
+                                <p>
+                                    Connect with locals in your destination by finding the hottest events in town.
+                                </p>
+                            </div>
+                            <div className="card-action">
+                                <a className="guideButton" href="/events">Get Started</a>
+                            </div>
                         </div>
-                    </article>
-                    <article className="col-xs-4">
-                        <div className="cards"><span className="glyphicon glyphicon-ice-lolly-tasted icon"></span>
-                            <hr className="divider" />
-                            <h2 className="title">Last</h2>
-                            <div className="info">
-                                <hr className="divider" />
-                                <p className="lead">Are you ready to go to the next page and be amazed of what you can find?</p><a className="btn btn-lg center-block">Go get it!</a></div>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </div>

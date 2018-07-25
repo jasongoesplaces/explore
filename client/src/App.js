@@ -1,29 +1,46 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Lander from "./pages/Lander";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import About from "./pages/About";
-import Dashboard from "./pages/Dashboard";
-import Guides from "./pages/Guides";
-import Events from "./pages/Events"
-import GuideDetail from "./pages/GuideDetail";
+import React, { Component } from 'react';
+import AuthService from './components/AuthService';
+import withAuth from './components/withAuth';
 
-const App = () => (
-  <Router>
-    <div>
-      <Switch>
-        <Route exact path="/" component={Lander} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/signup" component={Signup} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/dashboard" component={Dashboard} />
-        <Route exact path="/guides" component={Guides} />
-        <Route exact path="/guides/:location" component={GuideDetail} />
-        <Route exact path="/events" component={Events} />
-      </Switch>
-    </div>
-  </Router>
-);
 
-export default App;
+
+
+class App extends Component {
+
+  /* Create a new instance of the 'Authservice' compoenent*/
+ Auth = new AuthService();
+
+  state = {
+    username: "",
+    password: ""
+}
+
+/* Here will want to add a method to log the user out upon clicking 'Logout' */
+  _handleLogout = () => {
+    //include the logout() method from our AuthService helper class here.
+    this.Auth.logout();
+    this.props.history.replace('/login');
+  }
+
+  //Render the protected component
+  render() {
+
+    let name = this.props.confirm.name;
+
+    return (
+      <div className="App">
+        <div className="main-page">
+          <div className="top-section">
+            <h1>Welcome, {name}</h1>
+          </div>
+          <div className="bottom-section">
+            <button onClick={this._handleLogout}>LOGOUT</button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+//In order for this component to be protected, we must wrap it with what we call a 'Higher Order Compoenent' or HOC.
+export default withAuth(App);

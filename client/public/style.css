@@ -33,6 +33,11 @@ html {
   background-image: linear-gradient(to bottom left, #050553bb, rgba(0, 59, 110, 0.945));
 }
 
+.loginSignupLink {
+  color: #ffffff !important;
+  text-shadow: 5px 5px 10px rgb(48, 48, 49);
+}
+
 .title {
   text-align: center;
   font-weight: 100;
@@ -45,7 +50,8 @@ html {
   border-bottom: 1px solid #febbbb;
 }
 .cards {
-  background: #f2f2f2;
+  background: rgba(53, 53, 53, 0.247);
+  color: #ffffff;
   border-radius: 3px;
   cursor: pointer;
   height: 17em;
@@ -110,6 +116,10 @@ html {
   background: #00c5a7;
   color: #fff;
   transition: background 0.5s ease;
+}
+
+.card-title {
+  text-align: center !important
 }
 
 .landerNav {
@@ -191,6 +201,11 @@ html {
   animation-fill-mode: both;
 }
 
+.guideDetailErr {
+  margin-top: 5%;
+  text-align: center
+}
+
 .about {
   position: relative;
   min-height: 85vh;
@@ -251,6 +266,10 @@ html {
 
 .card-content {
   height: 150px;
+}
+
+.cardContentGuide {
+  height: 75px;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
@@ -421,6 +440,45 @@ button:focus {
 }
 
 .guideButton:hover {
+  -webkit-transition: all 300ms ease-in-out !important;
+  -moz-transition: all 300ms ease-in-out !important;
+  -o-transition: all 300ms ease-in-out !important;
+  transition: all 300ms ease-in-out !important;
+  border-color: rgb(48, 184, 241);
+  border-image-slice: 1;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(48, 184, 241) !important;
+}
+
+.guideButtonErr {
+  -webkit-transition: all 300ms ease-in-out !important;
+  -moz-transition: all 300ms ease-in-out !important;
+  -o-transition: all 300ms ease-in-out !important;
+  transition: all 300ms ease-in-out !important;
+  background-color: rgba(34, 34, 34, 0.466);
+  background-image: none;
+  border-color:#ffffff;
+  border-image-slice: 1;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  color: #ffffff;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 0.75;
+  padding: 1em 1em;
+  text-shadow: none;
+}
+
+.err {
+  text-align: center
+}
+
+.guideButtonErr:hover {
   -webkit-transition: all 300ms ease-in-out !important;
   -moz-transition: all 300ms ease-in-out !important;
   -o-transition: all 300ms ease-in-out !important;
@@ -769,6 +827,10 @@ input.valid[type=text]:not(.browser-default) {
     width: 20% !important;
   }
 
+  .eventButton {
+    margin-top: 30%;
+  }
+
   .card {
     margin-top: 5%;
   }
@@ -836,5 +898,18 @@ input.valid[type=text]:not(.browser-default) {
 
   .logoLander {
     width: 50%;
+  }
+
+  .cardContentGuideDetail {
+    height: 350px;
+  }
+  
+  .guideDetailAddress {
+    padding-bottom: 7%;
+    padding-top: 0
+  }
+
+  .loginSignupBtn {
+    margin-bottom: 3.5%
   }
 }

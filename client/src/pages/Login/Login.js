@@ -1,6 +1,50 @@
 import React, { Component } from "react";
+import AuthService from '../../components/AuthService';
+import { Link } from 'react-router-dom';
+
+
 
 class Login extends Component {
+    
+    /* In order to utilize our authentication methods within the AuthService class, we want to instantiate a new object */
+    Auth = new AuthService();
+
+    state = {
+        email: "",
+        password: ""
+    }
+
+    /* Fired off every time the use enters something into the input fields */
+    _handleChange = (e) => {
+        this.setState(
+            {
+                [e.target.name]: e.target.value
+            }
+        )
+    }
+
+    handleFormSubmit = (e) => {
+        e.preventDefault();
+        
+        /* Here is where all the login logic will go. Upon clicking the login button, we would like to utilize a login method that will send our entered credentials over to the server for verification. Once verified, it should store your token and send you to the protected route. */
+        this.Auth.login(this.state.email, this.state.password)
+        .then((res) => {
+            if(res === false){
+                return alert("Username or Password Incorrect")
+            }
+            this.props.history.replace('/dashboard');
+        }).catch(err => {
+            alert(err);
+        })
+    }
+
+    componentWillMount() {
+
+        /* Here is a great place to redirect someone who is already logged in to the protected route */
+        if(this.Auth.loggedIn())
+            this.props.history.replace('/dashboard')
+    }
+
   render() {
     return (
       <div className="landerPage">
@@ -29,9 +73,10 @@ class Login extends Component {
                         <div className="col l3 hide-on-med-and-down"></div>
                     </div>
                     <div>
-                        <a className="button" href="/guides">LOGIN</a>
+                        <a className="button loginSignupBtn" href="/guides">LOGIN</a>
                     </div>
                 </form>
+              <a className="loginSignupLink" href="/signup">Don't have an account? Signup</a>
             </div>
           </div>
         </div>

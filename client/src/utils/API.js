@@ -4,5 +4,8 @@ export default {
   // Gets the guide for a given location
   getCity: function(location) {
     return axios.get("/api/guides/" + location);
-  }
+  },
+  getActivity: function(id) {
+    return axios.get("/api/activity/" + id);
+  },
 };
