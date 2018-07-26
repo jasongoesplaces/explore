@@ -10,6 +10,7 @@ import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard'
 import GuidesDetail from './pages/GuideDetail'
 import GuidesLM from './pages/GuideLM'
+import ForumPost from './pages/ForumPost'
 import registerServiceWorker from './registerServiceWorker';
 
 /* Here we will create our routes right off the bat. */
@@ -25,6 +26,7 @@ ReactDOM.render(
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/guides/:location" component={GuidesDetail} />
         <Route exact path="/activity/:id" component={GuidesLM} />
+        <Route exact path="/forum/newpost" component={ForumPost} />
     </div>
 </Router>, document.getElementById('root'));
 registerServiceWorker();
