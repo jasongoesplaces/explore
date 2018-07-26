@@ -114,12 +114,12 @@ class Guides extends Component {
                                 <img className="cardImg" src="images/goldenCircle.jpg"/>
                             </div>
                             <div className="card-content">
-                                <span className="card-title">Iceland</span>
+                                <span className="card-title">The Golden Circle, Iceland</span>
                                 <p>I am a very simple card. I am good at containing small bits of information.
                                 I am convenient because I require little markup to use effectively.</p>
                             </div>
                             <div className="card-action">
-                                <a className="guideButton" href="/guides/iceland">Explore Iceland</a>
+                                <a className="guideButton" href="/guides/the%20golden%20circle">Explore Iceland</a>
                             </div>
                         </div>
                     </div>
