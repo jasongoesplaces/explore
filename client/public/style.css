@@ -323,6 +323,47 @@ html {
   color: rgb(48, 184, 241);
 }
 
+.eventButton2 {
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  background-color: rgba(34, 34, 34, 0.527);
+  background-image: none;
+  border-color: #ffffff;
+  border-image-slice: 1;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  color: #ffffff;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 1;
+  padding: 1em 1.5em;
+  text-shadow: none;
+  font-size: 10pt;
+  margin-top: 0;
+}
+
+.eventButton2:hover {
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  border-color: rgb(48, 184, 241);
+  border-image-slice: 1;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(48, 184, 241);
+}
+
+.eventCardAction {
+  height: 75px;
+}
+
 #eventsResults {
   overflow-y: scroll;
   overflow-x: scroll

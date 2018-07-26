@@ -42,9 +42,9 @@ $(document).ready(function(){
                         var newDate = dateAr[1] + '-' + dateAr[2] + '-' + dateAr[0];
                         var newCardDate = $("<p>").text("Event Date: " + newDate)
                         newCardContent.append(newCardDate)
-                        var newCardAction = $("<div class='card-action'>")
+                        var newCardAction = $("<div class='card-action eventCardAction'>")
                         newCardContain.append(newCardAction)
-                        var newCardLink = $("<a class='eventButton' target='_blank'>").text("Details")
+                        var newCardLink = $("<a class='eventButton2' target='_blank'>").text("Details")
                         newCardLink.attr("href", results[i].url)
                         newCardAction.append(newCardLink)
 
