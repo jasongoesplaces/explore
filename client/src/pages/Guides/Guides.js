@@ -100,8 +100,10 @@ class Guides extends Component {
                             </div>
                             <div className="card-content">
                                 <span className="card-title">Bergen, Norway</span>
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                                <p>Located on Norway's south-western coast, the former capital of the country is
+                                    surrounded by mountains and fjords. It's old wharf is still home to traditional
+                                    colorful wooden houses.
+                                </p>
                             </div>
                             <div className="card-action">
                                 <a className="guideButton" href="/guides/bergen">Explore Bergen</a>
@@ -115,8 +117,10 @@ class Guides extends Component {
                             </div>
                             <div className="card-content">
                                 <span className="card-title">The Golden Circle, Iceland</span>
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                                <p>The Golden Circle is a popular tourist route in southern Iceland. It is home
+                                    to many of the country's most famous tourist spots, however, the Golden Circle 
+                                    offers much more than just the usual tourist traps.
+                                </p>
                             </div>
                             <div className="card-action">
                                 <a className="guideButton" href="/guides/the%20golden%20circle">Explore Iceland</a>
