@@ -82,9 +82,9 @@ app.post('/login', (req, res) => {
 })
 
 /* The last route we need is a GET route to '/' Main reason for this is to prevent unauthorized requests to the server. So what we notice is that JWT can be used for both client side protected pages AND server side protected routes. You can setup ANY routes to require authentication with a token like so. */
-app.get('/', jwtMW, (req, res) => {
-  res.send('You are authenticated');
-})
+// app.get('/', jwtMW, (req, res) => {
+//   res.send('You are authenticated');
+// })
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
