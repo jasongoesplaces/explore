@@ -62,6 +62,60 @@ const guideSeed = [
     description: "Small sushi restaurant in the MetroWest area near Universal Studios. Quality food at a reasonable price.",
     image: "http://4.bp.blogspot.com/-qCioOc8wyCI/UCbIHWR291I/AAAAAAAABHM/eMqRVXUA5rg/s1600/DSC08052.JPG",
     link: "https://www.mikadosushigrill.com/"
+  },
+  {
+    location: "the golden circle",
+    type: "Adventure/Nature",
+    name: "Kvernufoss",
+    address: "Skógar, Iceland",
+    description: "Smaller waterfall located near one of Iceland's most famous falls, Skógafoss. While smaller, this one is much more secluded and there's a very good chance you could have the whole place to yourself. Parking can be found at the end of the road for the Skógar museum behind the last building.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/72/Kvernufoss.JPG",
+    link: "https://guidetoiceland.is/connect-with-locals/regina/the-beautiful-kvernufoss-waterfall-the-less-visited-neighbour-of-skogafoss-waterfall-in-south-iceland"
+  },
+  {
+    location: "the golden circle",
+    type: "Adventure/Nature",
+    name: "Gljúfrafoss",
+    address: "Þórsmerkurvegur, Iceland",
+    description: "Another waterfall located near one of Iceland's more popular waterfalls, this alternative to its tourist packed neighbor, is in a cave. It can be found about a half mile down the raod from Seljalandsfoss.",
+    image: "https://c1.staticflickr.com/8/7418/27570250811_c1e50258aa_b.jpg",
+    link: "https://www.atlasobscura.com/places/gljufrafoss"
+  },
+  {
+    location: "the golden circle",
+    type: "Adventure/Nature",
+    name: "Vik Church and Cemetery",
+    address: "Vik, Iceland",
+    description: "The small town of Vik is home to many popular spots such has the abandonded airplane wreck and black sand beach. However the best view of the town can be seen from just outside the cemetery of the church.",
+    image: "https://ssl.c.photoshelter.com/img-get2/I0000aGd276FisUA/fit=1000x750/Vik-church-beach-Iceland-1975.jpg",
+    link: "https://www.tripadvisor.com/ShowUserReviews-g189978-d7906747-r359831495-Vik_Church-Vik_South_Region.html"
+  },
+  {
+    location: "the golden circle",
+    type: "Adventure/Nature",
+    name: "Hrunalaug",
+    address: "Solheimavegur, Fludir, Iceland",
+    description: "This small natural hot spring can be found just off the main road. It's a somewhat popular spot for locals and it features some truely fantastic scenery all around the hot spring.",
+    image: "https://pbs.twimg.com/media/ClpBcEuWkAAhDYF.jpg",
+    link: "https://www.tripadvisor.com/Attraction_Review-g608871-d12713366-Reviews-Hrunalaug-Fludir_South_Region.html"
+  },
+  {
+    location: "the golden circle",
+    type: "Adventure/Nature",
+    name: "Sólheimasandur Plane Crash",
+    address: "Near Vik, Iceland",
+    description: "While, popular with tourists, this plane wreck is still a great place to visit. The wreck is surrounded by miles of nothing but black sand creating a very surreal environment. If you come late in the day you can avoid some of the crowds, but be ready to make the 2.5 mile walk back to the parking lot in the dark.",
+    image: "https://media-cdn.tripadvisor.com/media/photo-s/05/ee/ec/37/crashed-dc-3-plane.jpg",
+    link: "https://expertvagabond.com/airplane-crash-wreckage-iceland/"
+  },
+  {
+    location: "the golden circle",
+    type: "Hotels",
+    name: "Vatnsholt Farm",
+    address: "Vatnsholt 2, 801 South, Iceland",
+    description: "Small hotel located on a local farm. Fresh breakfast included and a beautiful location.",
+    image: "https://cdn.discover-the-world.co.uk/media/zoo/images/iceland-accommodation-vatnsholt-northern-lights_3380eeb5589cf33ddf437201fb964a13.jpg",
+    link: "http://www.hotelvatnsholt.is/en/"
   }
 ];
 

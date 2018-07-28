@@ -73,8 +73,8 @@ class Login extends Component {
                         <div className="col l3 hide-on-med-and-down"></div>
                     </div>
                     <div>
-                        <a className="button loginSignupBtn" href="/dashboard">LOGIN</a>
-                        {/* <span className="button loginSignupBtn" onClick={() => this.handleFormSubmit()}>LOGIN</span> */}
+                        {/* <a className="button loginSignupBtn" href="/dashboard">LOGIN</a> */}
+                        <span className="button loginSignupBtn" onClick={() => this.handleFormSubmit()}>LOGIN</span>
                     </div>
                 </form>
               <a className="loginSignupLink" href="/signup">Don't have an account? Signup</a>

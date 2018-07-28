@@ -12,9 +12,9 @@ class Dashboard extends Component {
                     <hr/>
                 </section>
                 <div className="row">
-                    <div className="col s12 m6">
+                    <div className="col s12 m4">
                         <div className="card">
-                            <div className="card-content">
+                            <div className="card-contentDash">
                                 <span class="card-title">City Guides</span>
                                 <p>
                                     Find the best activities in your destination with our city guides.
@@ -25,9 +25,9 @@ class Dashboard extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col s12 m6">
+                    <div className="col s12 m4">
                         <div className="card">
-                            <div className="card-content">
+                            <div className="card-contentDash">
                                 <span class="card-title">Events</span>
                                 <p>
                                     Connect with locals in your destination by finding the hottest events in town.
@@ -35,6 +35,19 @@ class Dashboard extends Component {
                             </div>
                             <div className="card-action">
                                 <a className="guideButton" href="/events">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col s12 m4">
+                        <div className="card">
+                            <div className="card-contentDash">
+                                <span class="card-title">Forum</span>
+                                <p>
+                                    Have questions about your destination? Join in the discussion on the forum to get answers.
+                                </p>
+                            </div>
+                            <div className="card-action">
+                                <a className="guideButton" href="/forum">Get Started</a>
                             </div>
                         </div>
                     </div>

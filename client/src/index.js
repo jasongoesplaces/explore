@@ -9,7 +9,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard'
 import GuidesDetail from './pages/GuideDetail'
-import GuidesLM from './pages/GuideLM'
+import Forum from './pages/Forum'
 import ForumPost from './pages/ForumPost'
 import registerServiceWorker from './registerServiceWorker';
 
@@ -25,7 +25,7 @@ ReactDOM.render(
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/guides/:location" component={GuidesDetail} />
-        <Route exact path="/activity/:id" component={GuidesLM} />
+        <Route exact path="/forum" component={Forum} />
         <Route exact path="/forum/newpost" component={ForumPost} />
     </div>
 </Router>, document.getElementById('root'));
