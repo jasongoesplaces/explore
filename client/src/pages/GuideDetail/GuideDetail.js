@@ -31,7 +31,7 @@ class GuideDetail extends Component {
                         <li><a href="/dashboard">Dashboard</a></li>
                         <li><a href="/guides">Guides</a></li>
                         <li><a href="/events">Events</a></li>
-                        <li><a href="/forum">Forum</a></li>
+                        {/* <li><a href="/forum">Forum</a></li> */}
                         <li><a className="waves-effect waves-light btn" href="/logout">Log Out</a></li>
                         </ul>
                         <ul id="nav-mobile" className="left hide-on-large-only">
@@ -43,7 +43,7 @@ class GuideDetail extends Component {
                     <li><a href="/about">Dashboard</a></li>
                     <li><a href="/guides">Guides</a></li>
                     <li><a href="/events">Events</a></li>
-                    <li><a href="/forum">Forum</a></li>
+                    {/* <li><a href="/forum">Forum</a></li> */}
                     <li><a href="/logout">Log Out</a></li>
                 </ul>
                 {this.state.guide.length ? (

@@ -13,6 +13,7 @@ import Dashboard from "./pages/Dashboard";
 import Guides from "./pages/Guides";
 import GuidesDetail from "./pages/GuideDetail";
 import Events from "./pages/Events";
+// import Forum from "./pages/Forum";
 
 class App extends Component {
   state = { loading: true, authenticated: false, user: null };
@@ -74,6 +75,12 @@ class App extends Component {
             component={Events}
             authenticated={authenticated}
           />
+          {/* <PrivateRoute
+            exact
+            path="/forum"
+            component={Forum}
+            authenticated={authenticated}
+          /> */}
         </div>
       </Router>
     );
