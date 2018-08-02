@@ -1,46 +1,82 @@
-import React, { Component } from 'react';
-import AuthService from './components/AuthService';
-import withAuth from './components/withAuth';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import PrivateRoute from "./components/PrivateRoute";
+import app from "./components/base";
 
-
+import Lander from "./pages/Lander";
+import About from "./pages/About";
+import Login from "./pages/Login";
+import SignUp from "./pages/Signup";
+import Logout from "./components/logout"
+import Dashboard from "./pages/Dashboard";
+import Guides from "./pages/Guides";
+import GuidesDetail from "./pages/GuideDetail";
+import Events from "./pages/Events";
 
 class App extends Component {
+  state = { loading: true, authenticated: false, user: null };
 
-  /* Create a new instance of the 'Authservice' compoenent*/
- Auth = new AuthService();
-
-  state = {
-    username: "",
-    password: ""
-}
-
-/* Here will want to add a method to log the user out upon clicking 'Logout' */
-  _handleLogout = () => {
-    //include the logout() method from our AuthService helper class here.
-    this.Auth.logout();
-    this.props.history.replace('/login');
+  componentWillMount() {
+    app.auth().onAuthStateChanged(user => {
+      if (user) {
+        this.setState({
+          authenticated: true,
+          currentUser: user,
+          loading: false
+        });
+      } else {
+        this.setState({
+          authenticated: false,
+          currentUser: null,
+          loading: false
+        });
+      }
+    });
   }
 
-  //Render the protected component
   render() {
+    const { authenticated, loading } = this.state;
 
-    let name = this.props.confirm.name;
+    if (loading) {
+      return <p>Loading..</p>;
+    }
 
     return (
-      <div className="App">
-        <div className="main-page">
-          <div className="top-section">
-            <h1>Welcome, {name}</h1>
-          </div>
-          <div className="bottom-section">
-            <button onClick={this._handleLogout}>LOGOUT</button>
-          </div>
+      <Router>
+        <div>
+          <Route exact path="/" component={Lander} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/logout" component={Logout} />
+          <PrivateRoute
+            exact
+            path="/dashboard"
+            component={Dashboard}
+            authenticated={authenticated}
+          />
+          <PrivateRoute
+            exact
+            path="/guides"
+            component={Guides}
+            authenticated={authenticated}
+          />
+          <PrivateRoute
+            exact
+            path="/guides/:location"
+            component={GuidesDetail}
+            authenticated={authenticated}
+          />
+          <PrivateRoute
+            exact
+            path="/events"
+            component={Events}
+            authenticated={authenticated}
+          />
         </div>
-      </div>
+      </Router>
     );
   }
 }
-
-//In order for this component to be protected, we must wrap it with what we call a 'Higher Order Compoenent' or HOC.
-export default withAuth(App);
+export default App;

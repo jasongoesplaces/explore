@@ -1,1 +1,26 @@
-export { default } from "./Signup.js";
+import React, { Component } from "react";
+import { withRouter } from "react-router";
+import app from "../../components/base";
+
+import SignUpView from "./SignupView";
+
+class SignUpContainer extends Component {
+  handleSignUp = async event => {
+    event.preventDefault();
+    const { email, password } = event.target.elements;
+    try {
+      const user = await app
+        .auth()
+        .createUserWithEmailAndPassword(email.value, password.value);
+      this.props.history.push("/dashboard");
+    } catch (error) {
+      alert(error);
+    }
+  };
+
+  render() {
+    return <SignUpView onSubmit={this.handleSignUp} />;
+  }
+}
+
+export default withRouter(SignUpContainer);
