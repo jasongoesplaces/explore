@@ -344,7 +344,7 @@ button:focus {
 }
 
 .input-field .prefix.active {
-  color: rgb(48, 184, 241)
+  color: rgb(97, 198, 241)
 }
 
 .wallpaper {
@@ -530,22 +530,22 @@ input[type=email]:not(.browser-default) {
 }
 
 input[type=email]:focus + label {
-  color: rgb(48, 184, 241) !important;
+  color: rgb(97, 198, 241) !important;
 }
 
 input[type=email]:focus {
-  color: rgb(48, 184, 241) !important;
+  color: rgb(97, 198, 241) !important;
 }
 
 input[type=email]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid rgb(48, 184, 241);
-  box-shadow: 0 1px 0 0 rgb(48, 184, 241);
+  border-bottom: 1px solid rgb(97, 198, 241);
+  box-shadow: 0 1px 0 0 rgb(97, 198, 241);
 }
 
 input.valid[type=email]:not(.browser-default) {
-  border-bottom: 1px solid rgb(48, 184, 241);
-  box-shadow: 0 1px 0 0 rgb(48, 184, 241);
-  color: rgb(48, 184, 241);
+  border-bottom: 1px solid rgb(97, 198, 241);
+  box-shadow: 0 1px 0 0 rgb(97, 198, 241);
+  color: rgb(97, 198, 241);
 }
 
 input.invalid[type=email]:not(.browser-default) {
@@ -557,22 +557,22 @@ input[type=password]:not(.browser-default) {
 }
 
 input[type=password]:focus + label {
-  color: rgb(48, 184, 241) !important;
+  color: rgb(97, 198, 241) !important;
 }
 
 input[type=password]:focus {
-  color: rgb(48, 184, 241) !important;
+  color: rgb(97, 198, 241) !important;
 }
 
 input[type=password]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid rgb(48, 184, 241);
-  box-shadow: 0 1px 0 0 rgb(48, 184, 241);
+  border-bottom: 1px solid rgb(97, 198, 241);
+  box-shadow: 0 1px 0 0 rgb(97, 198, 241);
 }
 
 input.valid[type=password]:not(.browser-default) {
-  border-bottom: 1px solid rgb(48, 184, 241);
-  box-shadow: 0 1px 0 0 rgb(48, 184, 241);
-  color: rgb(48, 184, 241);
+  border-bottom: 1px solid rgb(97, 198, 241);
+  box-shadow: 0 1px 0 0 rgb(97, 198, 241);
+  color: rgb(97, 198, 241);
 }
 
 input.invalid[type=password]:not(.browser-default) {
@@ -584,12 +584,12 @@ textarea.materialize-textarea {
 }
 
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid rgb(48, 184, 241);
-  box-shadow: 0 1px 0 0 rgb(48, 184, 241);
+  border-bottom: 1px solid rgb(97, 198, 241);
+  box-shadow: 0 1px 0 0 rgb(97, 198, 241);
 }
 
 textarea.materialize-textarea:focus:not([readonly])+label {
-  color: rgb(48, 184, 241);
+  color: rgb(97, 198, 241);
 }
 
 textarea#textarea1 {
@@ -597,7 +597,7 @@ textarea#textarea1 {
 }
 
 textarea#textarea1:focus {
-  color: rgb(48, 184, 241);
+  color: rgb(97, 198, 241);
 }
 
 input#name {
@@ -613,22 +613,22 @@ input[type=text]:not(.browser-default) {
 }
 
 input[type=text]:focus + label {
-  color: rgb(48, 184, 241) !important;
+  color: rgb(97, 198, 241) !important;
 }
 
 input[type=text]:focus {
-  color: rgb(48, 184, 241) !important;
+  color: rgb(97, 198, 241) !important;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid rgb(48, 184, 241);
-  box-shadow: 0 1px 0 0 rgb(48, 184, 241);
+  border-bottom: 1px solid rgb(97, 198, 241);
+  box-shadow: 0 1px 0 0 rgb(97, 198, 241);
 }
 
 input.valid[type=text]:not(.browser-default) {
-  border-bottom: 1px solid rgb(48, 184, 241);
-  box-shadow: 0 1px 0 0 rgb(48, 184, 241);
-  color: rgb(48, 184, 241);
+  border-bottom: 1px solid rgb(97, 198, 241);
+  box-shadow: 0 1px 0 0 rgb(97, 198, 241);
+  color: rgb(97, 198, 241);
 }
 
 
