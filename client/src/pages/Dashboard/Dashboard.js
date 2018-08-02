@@ -12,6 +12,7 @@ class Dashboard extends Component {
                     <hr/>
                 </section>
                 <div className="row">
+                    <div className="col s12 m2"></div>
                     <div className="col s12 m4">
                         <div className="card">
                             <div className="card-contentDash">
@@ -38,7 +39,7 @@ class Dashboard extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col s12 m4">
+                    {/* <div className="col s12 m4">
                         <div className="card">
                             <div className="card-contentDash">
                                 <span class="card-title">Forum</span>
@@ -50,7 +51,8 @@ class Dashboard extends Component {
                                 <a className="guideButton" href="/forum">Get Started</a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                    <div className="col s12 m2"></div>
                 </div>
             </div>
         </div>
